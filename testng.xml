@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Task 1" preserve-order="false" parallel="tests" thread-count="2" verbose="2">
+    <parameter name="test_data_path" value="src/main/resources/testdata.xlsx"/>
+    <parameter name="test_url" value="https://my.kaspersky.com/"/>
+    <parameter name="email" value="alexeychehskov@gmail.com"/>
+    <parameter name="password" value="Qwerty666"/>
+    <test name="Win-SCl">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Security Cloud"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Win-TS">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Total Security"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Win-IS">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Internet Security"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Win-AV">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Anti-Virus"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Win-SCn">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Secure Connection"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Win-PM">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Win-SK">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Mac-SCl">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Security Cloud"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Mac-IS">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Internet Security"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Mac-SCn">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Secure Connection"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Mac-PM">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Mac-SK">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Andr-SCl">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Security Cloud"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Andr-IS">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Internet Security"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Andr-SCn">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Secure Connection"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Andr-PM">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="Andr-SK">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="iOS-SCl">
+        <parameter name="os" value="iOS"/>
+        <parameter name="product" value="Security Cloud"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="iOS-SCn">
+        <parameter name="os" value="iOS"/>
+        <parameter name="product" value="Secure Connection"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="iOS-PM">
+        <parameter name="os" value="iOS"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+    <test name="iOS-SK">
+        <parameter name="os" value="iOS"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="KasperskyTest"/>
+        </classes>
+    </test>
+</suite>
